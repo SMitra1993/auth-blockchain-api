@@ -4,11 +4,10 @@
   "description": "Blockchain Auth API",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "dev": "nodemon --watch 'src/**/*.ts' --exec 'yarn start'",
     "heroku": "node ./build",
-    "start": "ts-node src"
+    "start": "nodemon src/index.ts"
   },
   "dependencies": {
     "@metamask/eth-sig-util": "^4.0.0",
@@ -30,7 +29,7 @@
     "sqlite3": "^5.0.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.6",
+    "nodemon": "^2.0.15",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.5"
   },
